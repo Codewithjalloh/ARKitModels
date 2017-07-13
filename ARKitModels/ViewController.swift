@@ -97,7 +97,7 @@ class ViewController: UIViewController {
         let camCoord = getYourCameraCoordinate(sceneView: sceneView)
         cupNode.position = SCNVector3(camCoord.x, camCoord.y, camCoord.z)
         
-        guard let modelObjScene = SCNScene(named:"chair.scn", inDirectory: "Models.scnassets/chair" ) else {
+        guard let modelObjScene = SCNScene(named:"cup.scn", inDirectory: "Models.scnassets/cup" ) else {
             return
         }
         
@@ -118,7 +118,7 @@ class ViewController: UIViewController {
         let camCoord = getYourCameraCoordinate(sceneView: sceneView)
         candleNode.position = SCNVector3(camCoord.x, camCoord.y, camCoord.z)
         
-        guard let modelObjScene = SCNScene(named:"chair.scn", inDirectory: "Models.scnassets/chair" ) else {
+        guard let modelObjScene = SCNScene(named:"candle.scn", inDirectory: "Models.scnassets/candle" ) else {
             return
         }
         
