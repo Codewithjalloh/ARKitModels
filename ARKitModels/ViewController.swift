@@ -68,13 +68,68 @@ class ViewController: UIViewController {
         
     }
     
+    // chair
     @IBAction func chairButtonPressed(_ sender: Any) {
+        
+        
+        let chairNode = SCNNode()
+        let camCoord = getYourCameraCoordinate(sceneView: sceneView)
+        chairNode.position = SCNVector3(camCoord.x, camCoord.y, camCoord.z)
+        
+        guard let modelObjScene = SCNScene(named:"chair.scn", inDirectory: "Models.scnassets/chair" ) else {
+            return
+        }
+        
+        let coverNode = SCNNode()
+        for child in modelObjScene.rootNode.childNodes {
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            coverNode.addChildNode(child)
+        }
+        
+        chairNode.addChildNode(coverNode)
+        sceneView.scene.rootNode.addChildNode(chairNode)
     }
     
+    // cup
     @IBAction func cupButtonPressed(_ sender: Any) {
+        
+        let cupNode = SCNNode()
+        let camCoord = getYourCameraCoordinate(sceneView: sceneView)
+        cupNode.position = SCNVector3(camCoord.x, camCoord.y, camCoord.z)
+        
+        guard let modelObjScene = SCNScene(named:"chair.scn", inDirectory: "Models.scnassets/chair" ) else {
+            return
+        }
+        
+        let coverNode = SCNNode()
+        for child in modelObjScene.rootNode.childNodes {
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            coverNode.addChildNode(child)
+        }
+        
+        cupNode.addChildNode(coverNode)
+        sceneView.scene.rootNode.addChildNode(cupNode)
     }
     
+    // candle
     @IBAction func candleButtonPressed(_ sender: Any) {
+        
+        let candleNode = SCNNode()
+        let camCoord = getYourCameraCoordinate(sceneView: sceneView)
+        candleNode.position = SCNVector3(camCoord.x, camCoord.y, camCoord.z)
+        
+        guard let modelObjScene = SCNScene(named:"chair.scn", inDirectory: "Models.scnassets/chair" ) else {
+            return
+        }
+        
+        let coverNode = SCNNode()
+        for child in modelObjScene.rootNode.childNodes {
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            coverNode.addChildNode(child)
+        }
+        
+        candleNode.addChildNode(coverNode)
+        sceneView.scene.rootNode.addChildNode(candleNode)
     }
     
     

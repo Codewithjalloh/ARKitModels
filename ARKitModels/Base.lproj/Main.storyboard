@@ -96,8 +96,8 @@
     </scenes>
     <resources>
         <image name="candle" width="30" height="32"/>
-        <image name="chair" width="30" height="21"/>
+        <image name="chair" width="60" height="42"/>
         <image name="cup" width="50" height="27"/>
-        <image name="lamp" width="40" height="40"/>
+        <image name="lamp" width="60" height="60"/>
     </resources>
 </document>
