@@ -59,13 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				58A9762B1F18102B00DF5270 /* AppDelegate.swift */,
+				58A9763F1F1817AD00DF5270 /* Constants.swift */,
 				58A9762D1F18102B00DF5270 /* ViewController.swift */,
 				58A9762F1F18102B00DF5270 /* Main.storyboard */,
 				58A976321F18102B00DF5270 /* Assets.xcassets */,
 				58A9763D1F1810B600DF5270 /* Models.scnassets */,
 				58A976341F18102B00DF5270 /* LaunchScreen.storyboard */,
 				58A976371F18102B00DF5270 /* Info.plist */,
-				58A9763F1F1817AD00DF5270 /* Constants.swift */,
 			);
 			path = ARKitModels;
 			sourceTree = "<group>";

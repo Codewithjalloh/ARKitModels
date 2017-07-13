@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ARKitModels
 //
-//  Created by wealthyjalloh on 13/07/2017.
+//  Created by codewithjalloh on 13/07/2017.
 //  Copyright © 2017 CWJ. All rights reserved.
 //
 
