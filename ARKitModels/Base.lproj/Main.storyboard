@@ -31,6 +31,9 @@
                                     <constraint firstAttribute="height" constant="50" id="qTD-HS-8SA"/>
                                 </constraints>
                                 <state key="normal" image="candle"/>
+                                <connections>
+                                    <action selector="candleButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rjo-5i-hB2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tog-e4-jle">
                                 <rect key="frame" x="16" y="579" width="67" height="68"/>
@@ -39,6 +42,9 @@
                                     <constraint firstAttribute="width" constant="67" id="Ppf-2J-IZV"/>
                                 </constraints>
                                 <state key="normal" image="lamp"/>
+                                <connections>
+                                    <action selector="lampButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0D-nd-qwk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkV-hk-IJu">
                                 <rect key="frame" x="300" y="583" width="59" height="64"/>
@@ -47,6 +53,9 @@
                                     <constraint firstAttribute="height" constant="64" id="yBk-xX-fOW"/>
                                 </constraints>
                                 <state key="normal" image="chair"/>
+                                <connections>
+                                    <action selector="chairButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dSI-Ge-9Lw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5r-lS-0z6">
                                 <rect key="frame" x="302" y="20" width="57" height="50"/>
@@ -55,6 +64,9 @@
                                     <constraint firstAttribute="width" constant="57" id="sWB-y9-U1k"/>
                                 </constraints>
                                 <state key="normal" image="cup"/>
+                                <connections>
+                                    <action selector="cupButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1H-rg-j9g"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -73,6 +85,9 @@
                             <constraint firstItem="c5r-lS-0z6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="waO-aW-rLa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="sceneView" destination="dUf-YM-DBy" id="o46-1o-YPm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
